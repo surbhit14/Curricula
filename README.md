@@ -1,5 +1,7 @@
-Project Name: Curricula
+**Project Name: Curricula**
+
 by Team: Invincible Coder
+
 Track: Quality Education 2 and Celo sponsor track
 
 Problem Statement:
