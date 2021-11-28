@@ -146,14 +146,15 @@ this.setState({
 render(){
   return (
     <View style={styles.container}>
-     
+     <Text style={styles.title}>Company Name: Sportify Sports Corp.</Text>
+     <Image source={require('./images/e.png')} style={{ height:120 ,width:150}}></Image>
       <Text style={styles.title}>Account Info:</Text>
-      <Text>Current Account Address:</Text>
+      <Text style={{fontSize:15,marginVertical:3}}>Address:</Text>
       <Text>{this.state.address}</Text>
-      <Text>Phone number: {this.state.phoneNumber}</Text>
-      <Text>cUSD Balance: {this.state.cUSDBalance}</Text>
+      <Text style={{fontSize:15,marginVertical:3}}>Phone number: {this.state.phoneNumber}</Text>
+      <Text style={{fontSize:15,marginVertical:3}}>cUSD Balance: {this.state.cUSDBalance}</Text>
 
-     <Text>Enter id to pay:</Text>
+     <Text>Enter student address to pay:</Text>
       <TextInput
         style={{  borderColor: 'black', borderWidth: 1, backgroundColor: 'white' }}
         onChangeText={text => this.onChange1(text)}
@@ -175,14 +176,15 @@ render(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#35d07f',
+
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
     marginVertical: 8, 
     fontSize: 20, 
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    margin:4
   }
 });
 
